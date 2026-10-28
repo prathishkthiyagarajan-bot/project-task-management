@@ -1,0 +1,195 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5fa;
+  color: #26334a;
+}
+
+header {
+  background: #2447a5;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 1150px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px #182c5010;
+}
+
+h2 {
+  color: #2447a5;
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 11px;
+  border: 1px solid #ccd4e1;
+  border-radius: 6px;
+  font: inherit;
+  background: white;
+}
+
+textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #b8c9ff;
+  border-color: #2447a5;
+}
+
+button {
+  padding: 11px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #2447a5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.86;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.success {
+  color: #16834a;
+}
+
+.error {
+  color: #c0392b;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stat {
+  background: #edf2ff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #43516b;
+}
+
+.stat strong {
+  display: block;
+  font-size: 30px;
+  color: #2447a5;
+  margin-top: 10px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e9f1;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background: #edf2ff;
+  color: #2447a5;
+}
+
+td select {
+  min-width: 120px;
+  margin: 0 0 7px;
+}
+
+.small-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.small-btn {
+  background: #16834a;
+}
+
+.delete-btn {
+  background: #c0392b;
+}
+
+#refreshButton {
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 0 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
